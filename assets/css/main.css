@@ -1,0 +1,664 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#colorlib {
+  width: 100%;
+  min-height: 60px;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#colorlib .row {
+  width: 98%;
+}
+#colorlib .row .colorlib {
+  display: flex;
+  align-items: center;
+}
+#colorlib .row .colorlib .colorlibLogo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
+}
+#colorlib .row .colorlib .colorlibLogo img {
+  width: 123px;
+  height: 30px;
+  cursor: pointer;
+}
+#colorlib .row .colorlib .colorlibLogo .onepro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 13px;
+  width: 22%;
+  background-color: #222222;
+  cursor: pointer;
+}
+#colorlib .row .colorlib .colorlibLogo .onepro p {
+  display: flex;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #9b9b9b;
+  line-height: 50px;
+}
+#colorlib .row .colorlib .colorlibIcon {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  height: 60px;
+  width: 100%;
+  margin-left: 23px;
+}
+#colorlib .row .colorlib .colorlibIcon .exit {
+  font-size: 24px;
+  color: #707370;
+  width: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 10%;
+  height: 100%;
+}
+#colorlib .row .colorlib .colorlibIcon .exit:hover {
+  color: white;
+  background-color: #222222;
+}
+#colorlib .row .colorlib .colorlibIcon .basket {
+  display: flex;
+  color: white;
+  width: 10%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #7AC64D;
+}
+#colorlib .row .colorlib .colorlibIcon .basket:hover {
+  background-color: #222222;
+}
+#colorlib .row .colorlib .colorlibIcon i {
+  font-size: 24px;
+  color: #707370;
+  width: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 10%;
+  height: 100%;
+}
+#colorlib .row .colorlib .colorlibIcon i:hover {
+  color: white;
+  background-color: #222222;
+}
+
+@media screen and (max-width: 756px) {
+  #colorlib .colorlib .col-6 .colorlibIcon i {
+    display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  #colorlib .colorlib .col-6 .colorlibLogo .onepro {
+    display: none;
+  }
+}
+#colorlibNav {
+  min-height: 58px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEEEEE;
+}
+#colorlibNav .colorlibNavTxt {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+#colorlibNav .colorlibNavTxt .phoneMail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+}
+#colorlibNav .colorlibNavTxt .phoneMail p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-top: 10px;
+  font-family: Raleway, sans-serif;
+  color: #6f6f6f;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 5px;
+}
+#colorlibNav .colorlibNavTxt .socialMedia {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 8px;
+}
+#colorlibNav .colorlibNavTxt .socialMedia i {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #ABABAB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+#colorlibNav .colorlibNavTxt .socialMedia i:hover {
+  background-color: #26b7e7;
+}
+
+@media screen and (max-width: 1000px) {
+  #colorlibNav .colorlibNavTxt .col-6 .phoneMail {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#onePro {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#onePro .onePro {
+  width: 100%;
+}
+#onePro .onePro .oneProLogo {
+  width: 90%;
+}
+#onePro .onePro .oneProLogo img {
+  cursor: pointer;
+}
+#onePro .onePro .oneProLogo .category {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+#onePro .onePro .oneProLogo .category .categoryElementHome {
+  color: #26b7e7;
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+#onePro .onePro .oneProLogo .category .categoryElement {
+  color: #333;
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+#onePro .onePro .oneProLogo .category .categoryElement:hover {
+  color: #26b7e7;
+  transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width: 991px) {
+  #onePro .onePro .oneProLogo .navItem {
+    background-color: #272727;
+  }
+  #onePro .onePro .oneProLogo .navItem .category {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  #onePro .onePro .oneProLogo .navItem .category .categoryElement {
+    color: white;
+  }
+  #onePro .onePro .oneProLogo .navItem .category .categoryElementHome {
+    color: white;
+  }
+}
+#businessTheme {
+  height: 750px;
+  width: 100%;
+  background-image: url("/assets/images/slide_1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#businessTheme .row .businessTheme {
+  height: 500px;
+  gap: 15px;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+}
+#businessTheme .row .businessTheme h4 {
+  font-size: 20px;
+  font-family: Raleway, sans-serif;
+  line-height: 28px;
+  font-weight: 700;
+  color: white;
+}
+#businessTheme .row .businessTheme h1 {
+  color: white;
+  font-family: Raleway, sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 56px;
+}
+#businessTheme .row .businessTheme p {
+  width: 45%;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+#businessTheme .row .businessTheme button {
+  width: 18%;
+  height: 10%;
+  background-color: #26b7e7;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: white;
+  transition: 0.3s ease;
+}
+#businessTheme .row .businessTheme button:hover {
+  background-color: white;
+  color: #26b7e7;
+  border: 1px solid #26b7e7;
+}
+
+@media screen and (max-width: 991px) {
+  #businessTheme .col-12 .businessTheme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #businessTheme .col-12 .businessTheme p {
+    text-align: center;
+  }
+}
+#learnMore {
+  width: 100%;
+  min-height: 463px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#learnMore .webDevelopment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+#learnMore .webDevelopment h3 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #292929;
+  font-family: Raleway, sans-serif;
+}
+#learnMore .webDevelopment p {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #6f6f6f;
+  font-family: Raleway, sans-serif;
+  width: 98%;
+}
+#learnMore .webDevelopment button {
+  width: 38%;
+  height: 70px;
+  color: white;
+  background-color: #26b7e7;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  line-height: 22px;
+  font-weight: 700;
+}
+#learnMore .webDevelopment button:hover {
+  background-color: #292929;
+}
+#learnMore .webDevelopment button:hover .webDevelopment {
+  background-color: #26b7e7;
+}
+#learnMore .webDevelopment .webDevelopmentIcon {
+  border: 1px solid #26b7e7;
+  width: 19%;
+  height: 48%;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#learnMore .webDevelopment .webDevelopmentIcon:hover {
+  background-color: #26b7e7;
+  color: white;
+}
+
+#awersomeProjects {
+  width: 100%;
+  min-height: 1206px;
+  display: flex;
+  justify-content: center;
+  background-color: #EEEEEE;
+}
+#awersomeProjects .awersomeProjectsTxt {
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+#awersomeProjects .awersomeProjectsTxt h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: Raleway, sans-serif;
+  color: #292929;
+}
+#awersomeProjects .awersomeProjectsTxt p {
+  text-align: center;
+  width: 68%;
+  color: #6f6f6f;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: Raleway, sans-serif;
+}
+#awersomeProjects .awersomeProjectsTxt .ourProject {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#awersomeProjects .awersomeProjectsTxt .ourProject .line {
+  width: 6%;
+  height: 3px;
+  background-color: #26B7E7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#awersomeProjects .awersomeProjectsCategory {
+  width: 100%;
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+#awersomeProjects .awersomeProjectsCategory .all {
+  color: #26B7E7;
+}
+#awersomeProjects .awersomeProjectsCategory p {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  font-family: Raleway, sans-serif;
+  color: #292929;
+  cursor: pointer;
+}
+#awersomeProjects .portfolio {
+  position: relative;
+  width: 100%;
+  height: 93%;
+}
+#awersomeProjects .portfolio img {
+  width: 100%;
+  height: 100%;
+}
+#awersomeProjects .portfolio:hover .portfolioHover {
+  display: block;
+  top: 0;
+  background-color: rgba(38, 183, 231, 0.9019607843);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#awersomeProjects .portfolio:hover .portfolioHover .portfolioHoverTxt {
+  border: 1px solid white;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#awersomeProjects .portfolio:hover .portfolioHover .portfolioHoverTxt h2 {
+  color: white;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  height: 12%;
+}
+#awersomeProjects .portfolio:hover .portfolioHover .portfolioHoverTxt p {
+  color: white;
+  font-family: Raleway, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+#awersomeProjects .portfolio .portfolioHover {
+  display: none;
+  position: absolute;
+}
+
+@media screen and (max-width: 776px) {
+  #awersomeProjects .awersomeProjectsCategory {
+    flex-wrap: wrap;
+  }
+}
+#ourTeam {
+  width: 100%;
+  min-height: 785px;
+  display: flex;
+  justify-content: center;
+}
+#ourTeam .ourTeamTxt {
+  width: 100%;
+  height: 204px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  gap: 20px;
+}
+#ourTeam .ourTeamTxt .meetOutTeam {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#ourTeam .ourTeamTxt .meetOutTeam .lineTeam {
+  width: 10%;
+  height: 3px;
+  background-color: #26B7E7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ourTeam .ourTeamTxt h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  font-family: Raleway, sans-serif;
+  color: #292929;
+}
+#ourTeam .ourTeamTxt p {
+  text-align: center;
+  width: 65%;
+  height: 40%;
+  color: #6f6f6f;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: Raleway, sans-serif;
+}
+#ourTeam .topPanel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#ourTeam .topPanel:hover .topSMMPanelHover {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#ourTeam .topPanel .topSMMPanelHover {
+  display: none;
+  position: absolute;
+  top: 0%;
+  background-color: rgba(38, 183, 231, 0.737254902);
+  width: 100%;
+  height: 100%;
+}
+#ourTeam .topPanel .topSMMPanelHover .topSMMPanelHoverTxt {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+#ourTeam .topPanel .topSMMPanelHover .topSMMPanelHoverTxt h4 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  color: #ffffff;
+  width: 80%;
+}
+#ourTeam .topPanel .topSMMPanelHover .topSMMPanelHoverTxt h4 span {
+  font-size: 14px;
+}
+#ourTeam .topPanel .topSMMPanelHover .topSMMPanelHoverTxt p {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+#ourTeam .topPanel .topSMMPanelHover .topSMMPanelHoverIcons {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#ourTeam .topPanel .topSMMPanelHover .topSMMPanelHoverIcons i {
+  width: 15%;
+  height: 33%;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  transition: 0.4s ease;
+}
+#ourTeam .topPanel .topSMMPanelHover .topSMMPanelHoverIcons i:hover {
+  background-color: white;
+  color: #26B7E7;
+}
+#ourTeam .topPanel img {
+  width: 100%;
+  height: 75%;
+}
+#ourTeam .topPanel .topPanelTxt {
+  background-color: #26B7E7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  width: 100%;
+}
+#ourTeam .topPanel .topPanelTxt h4 {
+  width: 80%;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+#ourTeam .topPanel .topPanelTxt span {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+}
+
+#copyRight {
+  width: 100%;
+  min-height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#copyRight .copyRightTxt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+#copyRight .copyRightTxt p {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: Raleway, sans-serif;
+}
+#copyRight .copyRightTxt span {
+  display: flex;
+  align-items: center;
+  width: 5%;
+  height: 20%;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: Raleway, sans-serif;
+  cursor: pointer;
+}
+#copyRight .copyRightTxt span:hover {
+  color: #26B7E7;
+}
+
+@media screen and (max-width: 539px) {
+  #copyRight .col-12 .copyRightTxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
